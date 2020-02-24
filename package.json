@@ -1,0 +1,22 @@
+{
+  "name": "typescript-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/hw6.js",
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "watch": "tscf -p tsconfig.json --preserveConsoleOutput --pretty --watch",
+    "test": "nodemon test/basic.test.js",
+    "dev": "npm_config_loglevel=silent concurrently \"npm run watch\" \"npm run test\""
+  },
+  "author": "kjhx",
+  "license": "MIT",
+  "dependencies": {
+    "tsc-fancy": "^1.1.2",
+    "typescript": "^3.8.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
